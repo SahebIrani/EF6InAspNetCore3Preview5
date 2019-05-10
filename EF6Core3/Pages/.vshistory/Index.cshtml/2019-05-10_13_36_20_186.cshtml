@@ -1,0 +1,14 @@
+﻿@page
+@model EF6Core3.Pages.IndexModel
+@{
+	ViewData["Title"] = "Home page";
+}
+
+@if (Model.Person != null)
+{
+	<p>@Model.Person.Id</p>
+	<p>@Model.Person.FullName</p>
+	<p>@Model.Person.Age</p>
+	<p>@Model.Person.CreateDate.ToString("MM/dd/yyyy HH:mm:ss.fff")</p>
+	<p>@Model.Person.Id</p>
+}
